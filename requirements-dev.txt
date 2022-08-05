@@ -1,0 +1,49 @@
+asgiref==3.5.2
+    # via django
+cfgv==3.3.1
+    # via pre-commit
+distlib==0.3.5
+    # via virtualenv
+django==4.1
+    # via
+    #   django-cors-headers
+    #   django-mock-queries
+    #   djangorestframework
+    #   model-bakery
+django-cors-headers==3.13.0
+    # via -r requirements-dev.in
+django-mock-queries==2.1.7
+    # via -r requirements-dev.in
+djangorestframework==3.13.1
+    # via django-mock-queries
+filelock==3.7.1
+    # via virtualenv
+identify==2.5.3
+    # via pre-commit
+mock==4.0.3
+    # via django-mock-queries
+model-bakery==1.7.0
+    # via
+    #   -r requirements-dev.in
+    #   django-mock-queries
+nodeenv==1.7.0
+    # via pre-commit
+parameterized==0.8.1
+    # via -r requirements-dev.in
+platformdirs==2.5.2
+    # via virtualenv
+pre-commit==2.20.0
+    # via -r requirements-dev.in
+pytz==2022.1
+    # via djangorestframework
+pyyaml==6.0
+    # via pre-commit
+sqlparse==0.4.2
+    # via django
+toml==0.10.2
+    # via pre-commit
+virtualenv==20.16.3
+    # via pre-commit
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

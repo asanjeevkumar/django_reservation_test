@@ -1,0 +1,7 @@
+# Note: this is only tooling for managing/testing the repo itself
+# function-specific requirements are in their respective directories
+django-mock-queries
+django-cors-headers
+model_bakery
+pre-commit
+parameterized

@@ -1,0 +1,34 @@
+[flake8]
+# same line length as Black
+max-line-length = 120
+extend-ignore =
+# https://github.com/PyCQA/pycodestyle/issues/373
+# E203: No space before colon (breaks [i+a : i+b] indexing)
+    E203,
+
+# conflicts with Black (https://github.com/psf/black/issues/1289)
+# E231: 1 space after comma (breaks trailing commas in set/list literals)
+    E231,
+
+# from https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/
+# E266: Too many leading #s for comments
+    E266,
+# F403: from module import * used
+    F403,
+
+# This is backwards, PEP 8 requires line breaks before binary operators not after.
+# W503: Line break occurred before binary operator
+    W503,
+
+# Black should be limiting the line length, but on the off chance that it decides
+# to leave an overlong line, flake shouldn't interrupt.
+# HOWEVER, I am unsure about how black copes with overlong block comments.
+# We'll see I suppose.
+# E501: Overlong lines
+    E501,
+
+# Required to prevent circular imports as part of setting up flask.
+# E402: Module level import not at top of file.
+    E402
+
+select = C,E,F,W,B,B950
