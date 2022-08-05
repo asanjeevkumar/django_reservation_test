@@ -1,5 +1,18 @@
-# boilderplate-backend-service
+# Reservation service
 Django bankend service 
+
+##To start the application 
+    
+### create an environment 
+    make venv 
+or 
+
+    python -m venv venv 
+    source venv/bin/activate (different for windows) 
+    python -m pip install -r requirements.txt 
+    
+### Start the application 
+    python manage.py runserver <<port>> (or you can use default port)
 
 For local development run the docker compose file
 
