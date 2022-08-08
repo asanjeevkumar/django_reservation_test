@@ -5,6 +5,7 @@ Django bankend service
     
 ### create an environment 
     make venv 
+    source venv/bin/activate
 or 
 
     python -m venv venv 
