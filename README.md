@@ -1,7 +1,7 @@
 # Reservation service
 Django bankend service 
 
-##To start the application 
+## To start the application 
     
 ### create an environment 
     make venv 
